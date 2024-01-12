@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+     
+            *{
+                margin: 0;
+                list-style: none;
+            }
+
+        body
+            {
+                background-color: #f0f8ff;
+            }
+
+        .navButton
+            {
+                padding: 15px;
+                margin-top: 4px;
+                margin-right: 100px;
+                float: right;
+            }
+
+        .sidebar
+            {
+                position: fixed;
+                float: right;
+                right: -280px;
+                width: 220px;
+                height: 310px;
+                border-top: 111px;
+                background: #44c3d3;
+                transition: all .5s ease;
+            }
+        .sidebar ul a
+            {
+                display: block;
+                height: 100%;
+                width: 100%;
+                line-height: 75px;
+                font-family: "Anton";
+                font-size: 22px;
+                color: white;
+                padding-left: 10px;
+                box-sizing: border-box;
+                border-top: 3px solid white;
+                transition: .5s;
+            }
+
+        ul li:hover a
+            {
+                padding-left: 0px;
+            }
+
+        #check
+            {
+                
+                display: none;
+            }
+
+        label #btn    
+            {
+                position: absolute;
+                cursor: pointer;
+                
+            }
+
+        label #btn   
+            {
+                right: 30px;
+                top: 18px;
+                font-size: 70px;
+                color: black;
+            }
+
+        
+        #check:checked ~ .sidebar
+            {
+	               right: 0;
+            }
+
+        nav
+            {
+                width: 100%;
+                position: fixed;
+                height: 111px;
+                background: #2F447D;
+            }
+
+        .logo
+            {
+                height: 100px;
+                float: left;
+                padding: 5px;
+            }
+
+        .cover
+            {
+                height: 50px;
+            }
+
+
+        .PISAYTitle1
+            {
+                font-family: "Anton";
+                font-size: 37px;
+                color: white;
+            }
+
+        .PISAYTitle2
+            {
+                font-family: "Anton";
+                font-size: 37px;
+                color: white;
+            }
+        .bigp1
+            {
+                height: 97vh;
+                width: 97vw;
+                margin-left: 10px;
+                
+            } 
+		.description
+		{
+                align-items: center;
+                justify-content: center;
+                height: 0px;
+                margin: 0;
+				text-align: center;
+		}
+		.desc-container,
+        .desc-container1,
+        .desc-container2 
+		{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+        }
+
+        .desc-container img,
+        .desc-container2 img 
+		{
+                width: 600px;
+                height: auto;
+                margin-right: 20px;
+        }
+
+        .desc-container1 img 
+		{
+                width: 600px;
+                height: auto;
+                margin-left: 20px;
+        }     
+        .desc-container2 img 
+		{
+                width: 300px;
+                height: auto;
+                margin-left: 20px;
+        }
+
+        .desc-container .text,
+        .desc-container1 .text,
+        .desc-container2 .text 
+		{
+                flex: 1;
+        }
+
+        .desc-container p,
+        .desc-container1 p,
+        .desc-container2 p 
+		{
+                text-align: justify;
+	            font-size: 40px;
+	            text-align: justify;
+                display: flex;
+                width: 650px;
+                margin: 10px auto;
+                background-color: rgba(0, 0, 128, 0.2);
+                padding: 10px;
+                border-radius: 10px;
+        }
+		
+		
+		.subtitle
+		{
+		        font-size: 40px;
+		        display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 340px;
+                margin: 0;
+                text-align: center;
+		}
+	
+		
+			
+			}
+			
+            @import url(https://www.onlinewebfonts.com/download/0d4bd6300a54d19c5fc62fe7e07c48cb);
+                @font-face 
+                    {
+                        font-family: "Anton";
+                        src: url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.eot");
+                        src: url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.eot?     #iefix")format("embedded-opentype"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.woff2")format("woff2"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.woff")format("woff"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.svg#Anton")format("svg");
+                    }
+					
+    
+
+            *{
+                margin: 0;
+                list-style: none;
+            }
+
+        
+
+    </style>
+    <head>
+	
+        <meta charset="UTF-8">
+        <meta name="description" content="AAQ2">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Rheane Ezrah F. Manocsoc-Sodium">
+        <meta name="author" content="Dirk A. Pabillore-Lithium">
+        <meta name="author" content="Mary-Calcium">
+    </head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <body> 
+
+        <nav>
+            <ul> 
+
+                
+                <li class="navButton"><a href="index.html"> <img src="homelogo.png" width="70" height="70"></a></li>
+              
+
+            </ul>
+            <img src="pisaylogo.png" class="logo"> 
+
+
+        <h1 class="PISAYTitle1">PHILLIPINE SCIENCE</h1>
+        <h1 class="PISAYTitle2">HIGH SCHOOL</h1>
+       
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li> <a href="#">Highlights</a></li>
+                <li> <a href="#">Achevements</a></li>
+                <li> <a href="#"> Mission, Vission & Quality Policy </a></li>
+            </ul>
+        </div>
+
+        </nav>
+		
+		<div class="subtitle">
+		       <h1>"Highlights"</h1>
+	    </div>
+		
+		<div class="description">
+		
+		  <div class="desc-container">
+    <img src="https://crc.pshs.edu.ph/images/Winnings/IMG_20190820_145340.jpg" alt="deez nuts">
+    <div class="text">
+        <p>PSHS-CRC is known for its academic Excellence, providing students a rigorous science and technology education. The school has selective admission criteria, ensuring that entrance to PSHS is competitive and based on merit</p>
+    </div>
+</div>
+
+<div class="desc-container1">
+    <div class="text">
+        <p>Those who passed will get opportunities to show themselves in a challenging and thrilling learning environment.</p>
+    </div>
+    <img src="https://crc.pshs.edu.ph/images/Winnings/PSHSSMO_copy.jpg">
+</div>
+
+<div class="desc-container2">
+    <img src="https://crc.pshs.edu.ph/images/Winnings/IMG_9393.jpg" alt="deez nuts">
+    <div class="text">
+        <p>Those who passed will be excelled to universities and make a significant contribution to the scientific field. Overall, PSHS-CRC is a top-notch institution that encourages scientific learning and empowers talented students to reach their full potential</p>
+    </div>
+</div>
+
+    </body>
+</html>

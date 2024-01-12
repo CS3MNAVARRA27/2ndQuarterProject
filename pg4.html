@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        list-style: none;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('https://pbs.twimg.com/media/E7UBQXRUUAQt0EF?format=jpg&name=large') center/cover no-repeat;
+        filter: blur(5px);
+        z-index: -1;
+    }
+
+    .navButton {
+        padding: 15px;
+        margin-top: 4px;
+        margin-right: 100px;
+        float: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        float: right;
+        right: -280px;
+        width: 220px;
+        height: 310px;
+        border-top: 111px;
+        background: #44c3d3;
+        transition: all .5s ease;
+    }
+
+    .sidebar ul a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 75px;
+        font-family: "Anton";
+        font-size: 22px;
+        color: white;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-top: 3px solid white;
+        transition: .5s;
+    }
+
+    ul li:hover a {
+        padding-left: 0px;
+    }
+
+    #check {
+        display: none;
+    }
+
+    label #btn {
+        position: absolute;
+        cursor: pointer;
+    }
+
+    label #btn {
+        right: 30px;
+        top: 18px;
+        font-size: 70px;
+        color: black;
+    }
+
+    #check:checked~.sidebar {
+        right: 0;
+    }
+
+    nav {
+        width: 100%;
+        position: fixed;
+        height: 111px;
+        background: #2F447D;
+    }
+
+    .logo {
+        height: 100px;
+        float: left;
+        padding: 5px;
+    }
+
+    .cover {
+        height: 50px;
+    }
+
+    .PISAYTitle1,
+    .PISAYTitle2 {
+        font-family: "Anton";
+        font-size: 37px;
+        color: white;
+    }
+
+    .bigp1 {
+        height: 97vh;
+        width: 97vw;
+        margin-left: 10px;
+    }
+
+    .description {
+        align-items: center;
+        justify-content: center;
+        height: 0px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .desc-container,
+    .desc-container1,
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .desc-container .text,
+    .desc-container1 .text
+    {
+        
+        text-align: justify;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 1000px;
+        margin: 10px auto;
+        background-color: rgba(240, 248, 255, 0.3);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .desc-container p,
+    .desc-container1 p
+    {
+        font-size: 16px;
+        margin-top: 25px;
+        font-size: 40px;
+    }
+
+    .Highlights {
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        margin: 0;
+    }
+
+    .Title,
+    .Title1 {
+        text-align: center;
+        font-size: 35px;
+    }
+	@import url(https://www.onlinewebfonts.com/download/0d4bd6300a54d19c5fc62fe7e07c48cb);
+                @font-face 
+                    {
+                        font-family: "Anton";
+                        src: url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.eot");
+                        src: url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.eot?     #iefix")format("embedded-opentype"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.woff2")format("woff2"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.woff")format("woff"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.svg#Anton")format("svg");
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="AAQ2">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Rheane Ezrah F. Manocsoc-Sodium">
+    <meta name="author" content="Dirk A. Pabillore-Lithium">
+    <meta name="author" content="Mary-Calcium">
+</head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<body>
+
+    <nav>
+        <ul>
+        <li class="navButton"><a href="index.html"> <img src="homelogo.png" width="70" height="70"></a></li>
+        </ul>
+        <img src="pisaylogo.png" class="logo">
+        <h1 class="PISAYTitle1">PHILLIPINE SCIENCE</h1>
+        <h1 class="PISAYTitle2">HIGH SCHOOL</h1>
+        <input type="checkbox" id="check">
+        <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        </label>
+        <div class="sidebar">
+        <ul>
+        <li> <a href="#">Highlights</a></li>
+        <li> <a href="#">Achevements</a></li>
+        <li> <a href="#"> Mission, Vission & Quality Policy </a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="Highlights">
+        <h1 class="Title">Philippine Science High School</h1>
+        <h1 class="Title1">Mataas na Paaralang Pang-agham ng Pilipinas</h1>
+    </div>
+
+    <div class="description">
+        <div class="desc-container">
+        <div class="text">
+        <p>The PSHS System provides scholarships to talented Filipino students in science and math. To enter, students take the National Competitive Examination (NCE), and only Filipino citizens are eligible. PSHS graduates must pursue major in pure and applied sciences, mathematics, or engineering. The school’s rigorous curriculum cultivates top-notch professionals.</p>
+        </div>
+        </div>
+
+        <div class="desc-container1">
+        <div class="text">
+        <p>PSHS actively participation in national and international science, technology, and mathematics competitions such as Sipnayan, Kapnayan, MATHirang MATHibay. Notable achievements include successes in the Philippine and Australian Mathematics Competition and international competitions such as Intel ISEF and International Math Olympiad. Private funding helps students excel in prestigious events like the Taiwan International Science and Engineering Fair and International Physics Olympiad. </p>
+        </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
